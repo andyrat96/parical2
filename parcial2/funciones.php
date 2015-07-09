@@ -5,17 +5,11 @@
         <title>Operación</title>
     </head>
     <body>
-
-
-
-<?php    
-
-function general(){
-    
-    $estructura = $_POST['estructura'];
-    switch($estructura){
-        case "elwhile":
-            $n  = 1; 
+<?php
+    $ciclo = $_POST['ciclo'];
+    switch($ciclo){
+        case "while":
+            $n = 1; 
             $i = 1;
             while ($i<=10) {
                 echo "$n x $i = ".$n*$i."<br/>";
@@ -175,13 +169,7 @@ function general(){
         echo "</table>";
         
         break;
-        
-        
-        
-        
-        
-        
-            }
+        }
 
 }
 if(isset($_POST['estructura']))
@@ -189,8 +177,5 @@ if(isset($_POST['estructura']))
         general();
     }
 ?>
-
-
 </body>
-
 </html>
